@@ -25,13 +25,15 @@ a {
 }
 
 #pelicula {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 1em;
+  position: relative;
+  padding: 1em;
 }
 
 article {
   width: 50%;
-  height: 500px;
 }
 
 aside {
